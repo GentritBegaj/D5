@@ -237,7 +237,7 @@ const onlyTitles = function () {
 const onlyThisMillenium = function () {
     let milleniumMovies = [];
     for(let i = 0; i < movies.length; i++) {
-        if (movies[i].Year >= 2000) {
+        if (Number(movies[i].Year) >= 2000) {
             milleniumMovies.push(movies[i]);
         }
     }
