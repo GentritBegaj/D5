@@ -345,14 +345,17 @@ console.log(deleteX(13, movies));
   ***
 */
 
-const halfTree = (n) {
-    let tree = '';
-    for (let i = 0; i < n; i++) {
-        tree += i * '*' ;
+const halfTree = function(n) {
+    for(let i =0; i < n; i++) {
+      let star = "";
+      for(let j = 0; j < i + 1; j++) {
+        star += "*";
+      }
+      console.log(star);
     }
-    return tree;
-}
-console.log(halfTree(3));
+  }
+  
+  halfTree(3)
 
 /* Ex.22 
   Create a function tree that receives the height and creates an "*" tree with that height.
